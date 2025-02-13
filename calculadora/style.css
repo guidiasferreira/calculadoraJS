@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./img/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixaCalculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    width: 40vw;
+    height: 50vh;
+    margin-top: 15vh;
+    border-radius: 5px;
+}
+
+#titleCalculadora{
+    margin-bottom: 3vh;
+    color: #fff;
+    font-size: 36px;
+}
+
+#titleCalculadora::selection{
+    background-color: #83904b;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 18px;
+    gap: 1vh;
+}
+
+select{
+    width: 100%;
+    padding: 1vh 0.5vw;
+    font-size: 15px;
+}
+
+select::selection{
+    background-color: #83904b;
+}
+
+#n1, #n2{
+    padding: 1vh 0.5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+#n1::selection{
+    background-color: #83904b;
+}
+
+#n2::selection{
+    background-color: #83904b;
+}
+
+button{
+    font-size: 20px;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    background-color: #83904b;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #2f3f08;
+}
+
+button::selection{
+    background-color: #83904b;
+}
+
+.result{
+    margin-top: 2vh;
+}
+
+#resultado{
+    font-size: 24px;
+    color: #fff;
+}
+
+#resultado::selection{
+    background-color: #83904b;
+}
